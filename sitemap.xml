@@ -3,73 +3,73 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://localhost/faqs/general/question50/</loc>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question50/</loc>
   </url>
   
   <url>
-    <loc>https://localhost/audience/</loc>
+    <loc>https://cloudreach-pdev.github.io/audience/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://localhost/faqs/commercial/question50/</loc>
+    <loc>https://cloudreach-pdev.github.io/faqs/commercial/question50/</loc>
   </url>
   
   <url>
-    <loc>https://localhost/categories/</loc>
+    <loc>https://cloudreach-pdev.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://localhost/</loc>
+    <loc>https://cloudreach-pdev.github.io/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://localhost/audience/audience3/</loc>
+    <loc>https://cloudreach-pdev.github.io/audience/audience3/</loc>
   </url>
   
   <url>
-    <loc>https://localhost/audience/audience1/</loc>
+    <loc>https://cloudreach-pdev.github.io/audience/audience1/</loc>
   </url>
   
   <url>
-    <loc>https://localhost/example/</loc>
+    <loc>https://cloudreach-pdev.github.io/example/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://localhost/faqs/</loc>
+    <loc>https://cloudreach-pdev.github.io/faqs/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://localhost/example/development/</loc>
+    <loc>https://cloudreach-pdev.github.io/example/development/</loc>
   </url>
   
   <url>
-    <loc>https://localhost/audience/audience2/</loc>
+    <loc>https://cloudreach-pdev.github.io/audience/audience2/</loc>
   </url>
   
   <url>
-    <loc>https://localhost/faqs/technical/question500/</loc>
+    <loc>https://cloudreach-pdev.github.io/faqs/technical/question500/</loc>
   </url>
   
   <url>
-    <loc>https://localhost/tags/</loc>
+    <loc>https://cloudreach-pdev.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://localhost/example/models/</loc>
+    <loc>https://cloudreach-pdev.github.io/example/models/</loc>
   </url>
   
   <url>
-    <loc>https://localhost/example/requirements/</loc>
+    <loc>https://cloudreach-pdev.github.io/example/requirements/</loc>
   </url>
   
   <url>
-    <loc>https://localhost/example/views/</loc>
+    <loc>https://cloudreach-pdev.github.io/example/views/</loc>
   </url>
   
 </urlset>

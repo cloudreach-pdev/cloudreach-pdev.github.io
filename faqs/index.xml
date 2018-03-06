@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Faqs on Conductor - The coda to your cloud management problems.</title>
-    <link>https://localhost/faqs/</link>
+    <link>https://cloudreach-pdev.github.io/faqs/</link>
     <description>Recent content in Faqs on Conductor - The coda to your cloud management problems.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://localhost/faqs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cloudreach-pdev.github.io/faqs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>AT-1</title>
-      <link>https://localhost/faqs/general/question50/</link>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question50/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost/faqs/general/question50/</guid>
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question50/</guid>
       <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
     </item>
     
     <item>
       <title>C-1</title>
-      <link>https://localhost/faqs/commercial/question50/</link>
+      <link>https://cloudreach-pdev.github.io/faqs/commercial/question50/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost/faqs/commercial/question50/</guid>
+      <guid>https://cloudreach-pdev.github.io/faqs/commercial/question50/</guid>
       <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
     </item>
     
     <item>
       <title>S-1</title>
-      <link>https://localhost/faqs/technical/question500/</link>
+      <link>https://cloudreach-pdev.github.io/faqs/technical/question500/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://localhost/faqs/technical/question500/</guid>
+      <guid>https://cloudreach-pdev.github.io/faqs/technical/question500/</guid>
       <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
     </item>
     
