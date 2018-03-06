@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conductor - The coda to your cloud management problems.</title>
+    <link>https://localhost/</link>
+    <description>Recent content on Conductor - The coda to your cloud management problems.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://localhost/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AT-1</title>
+      <link>https://localhost/faqs/general/question50/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/faqs/general/question50/</guid>
+      <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
+    </item>
+    
+    <item>
+      <title>C-1</title>
+      <link>https://localhost/faqs/commercial/question50/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/faqs/commercial/question50/</guid>
+      <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
+    </item>
+    
+    <item>
+      <title>Data and Application Owners</title>
+      <link>https://localhost/audience/audience3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/audience/audience3/</guid>
+      <description>Establish the link between your service portfolios, data sets and cloud infrastructure. Conductor allows insight not just into what a particular resource is, but HOW it relates to other resources and what the impact of that relationship is. Understand what the critical chain looks like for you and yours, what happens when a link in the chain is compromised and manage the measures in play to prevent this.</description>
+    </item>
+    
+    <item>
+      <title>Development and Operational Teams</title>
+      <link>https://localhost/audience/audience1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/audience/audience1/</guid>
+      <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Development</title>
+      <link>https://localhost/example/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/example/development/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae.</description>
+    </item>
+    
+    <item>
+      <title>Governance or Compliance Managers</title>
+      <link>https://localhost/audience/audience2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/audience/audience2/</guid>
+      <description>Make policies work for you, ensuring that compliance requirements are met throughout every cloud resources ITSM lifecycle at both the macro and micro levels. Conductor simplifies the construction and enforcement of complex resource, application and data policies through simple-to-build and delegate rules. With Conductor capable solutions, you are able to monitor all policies that are in play for any set of resources at any time.</description>
+    </item>
+    
+    <item>
+      <title>S-1</title>
+      <link>https://localhost/faqs/technical/question500/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/faqs/technical/question500/</guid>
+      <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
+    </item>
+    
+    <item>
+      <title>models</title>
+      <link>https://localhost/example/models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/example/models/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae.</description>
+    </item>
+    
+    <item>
+      <title>requirements</title>
+      <link>https://localhost/example/requirements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/example/requirements/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae.</description>
+    </item>
+    
+    <item>
+      <title>views</title>
+      <link>https://localhost/example/views/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://localhost/example/views/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae.</description>
+    </item>
+    
+  </channel>
+</rss>
