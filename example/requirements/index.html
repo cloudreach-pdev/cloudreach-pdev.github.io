@@ -102,11 +102,142 @@
  						<h2 id="title" class="entry-title" style="color:#e62958">requirements</h1>
 					</header>
 					<div class="entry-content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae. Adipisci ad natus deleniti.</p>
+						<p>Conductor has lean requirements for getting started, namely the following two things are needed:</p>
 
-<p>Dolores harum alias consequatur blanditiis. Inventore, quod, ullam veritatis eum ratione neque quis fugit quae optio facilis in ipsa! Maiores, quia, possimus repellendus iusto nostrum nisi doloribus qui excepturi ducimus veritatis molestiae autem consequatur quae ex nihil id sapiente minima adipisci. Quibusdam, aperiam, sapiente, nobis, possimus vero laudantium delectus esse minus quo nihil perspiciatis accusamus. Cupiditate sapiente illum accusantium animi pariatur sed minima nam.</p>
+<dl class="dl-horizontal" >
+  <dt style="text-align:left">Platform Setup</dt>
+  <dd style="text-align:justify"><p>Access to an Amazon Web Services (AWS) provider account is required to execute Conductor solutions using <a href="https://aws.amazon.com/lambda/">AWS Lambda</a>. Conductor simply requires an ARN of an AWS IAM Role meeting or exceeding this <a data-toggle="collapse" data-target="#sre-iam-policy">policy <i class="fas fa-angle-down"></i></a>.</p>
+  <p>
+  <div id="sre-iam-policy" class="collapse">
+    <pre>
+    <code>
+    {
+       "Version": "2012-10-17",
+       "Statement": [
+           {
+               "Action": [
+                   "iam:CreatePolicy",
+                   "iam:CreateRole",
+                   "iam:AttachRolePolicy"
+               ],
+               "Effect": "Allow",
+               "Resource": "*"
+           }
+       ]
+    }
+    </code>
+    </pre>
+  </div>
+  </p>
+  </dd>
+  <dt style="text-align:left">API Credentials</dt>
+  <dd style="text-align:justify"><p>Services or platforms you wish to integrate Conductor with (<a style="cursor:pointer" data-toggle="collapse" data-target="#example-services">for example*</a>) must have a public accessible API, and ability to support authentication via HTTPS or AWS Roles. The Conductor platform is able to manage access or support a self-service model for configuring API credentials.</p>
+  <div id="example-services" class="collapse" style="font-size:12px;text-align:justify">
+    <p>
+    <i>* This could be a cloud provider such as AWS / Azure, a configuration platform like Ansible / Chef or perhaps an ERP a la Salesforce</i>
+    </p>
+  </div>
+  </dd>
+</dl>
 
-<p>Harum, consectetur, quia nisi fugiat quasi ea amet cum inventore aperiam optio qui perspiciatis debitis molestiae laborum minima doloremque ullam eum nesciunt repellendus dolor dicta cumque deserunt. Quaerat, saepe, maxime, quod, dolor nisi assumenda aut est quos optio animi aliquid quidem voluptates adipisci hic recusandae dicta quis eligendi illo ducimus asperiores reiciendis odit distinctio natus? In, reprehenderit, facere, ipsam, vel architecto autem temporibus a quidem voluptatum at nesciunt quas facilis. Soluta, excepturi, nihil, illum dicta hic ratione tenetur voluptate dolorum a tempore dignissimos reprehenderit voluptas expedita officiis enim minus adipisci?</p>
+<h5> Configuring a Resource Provider for Access </h5>
+
+<p style="text-align:justify">
+
+For each resource provider used by one or more solutions, configuration to allow access by the solution will be needed, this can be achieved in one of two ways.
+
+</p>
+
+<ul class="list-group">
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#option-a">Platform Managed Access <i class="fas fa-angle-down"></i></a>
+    <span class="badge badge-default badge-pill">Option A</span>
+    <div id="option-a" class="collapse" style="font-size:12px;text-align:justify">
+      <br>
+      <p>
+      Conductor ensures that the least set of permissions are always deployed to service a solution. Where the platform manages access, each resource provider is configured with a master set of credentials (examples below) which are used to generate a secondary set of lesser permissions per solution, as defined by the solution. The benefit is complete automation and maintenance of deployment.
+      </p>
+      <p>
+        <a data-toggle="collapse" data-target="#ex-1">Example 1: AWS Policy for Managed Access <i class="fas fa-angle-down"></i></a>
+        <div id="ex-1" class="collapse">
+        Yo.
+        </div>
+      </p>
+      <p>
+        <a data-toggle="collapse" data-target="#ex-2">Example 2: Chef Permissions for Managed Access <i class="fas fa-angle-down"></i></a>
+        <div id="ex-2" class="collapse">
+        Yo.
+        </div>
+      </p>
+      <p>
+        <a data-toggle="collapse" data-target="#ex-3">Example 3: GitHub Role for Managed Access <i class="fas fa-angle-down"></i></a>
+        <div id="ex-3" class="collapse">
+        Yo.
+        </div>
+      </p>
+      <p>
+        <a data-toggle="collapse" data-target="#ex-4">Example 4: Salesforce Permissions for Managed Access <i class="fas fa-angle-down"></i></a>
+        <div id="ex-4" class="collapse">
+        Yo.
+        </div>
+      </p>
+    </div>
+  </li>
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#option-b">User Managed Access <i class="fas fa-angle-down"></i></a>
+    <span class="badge badge-default badge-pill">Option B</span>
+    <div id="option-b" class="collapse" style="text-align:justify">
+      <br>
+      <p>
+      Conductor allows users to deploy their own permissions per solution, per resource provider. This option is less preferable but well suited to more restricted organisations where all access must undergo review before deployment. In this model, each solution will show what permissions are needed and users expected to configure access out-of-band. The trade-off with this approach is heightened effort and maintenance overall (as permissions will need to be reviewed and updated potentially with every solution update). It is recommended that Platform managed access is used wherever possible to avoid this overhead.
+      </p>
+    </div>
+  </li>
+</ul>
+
+<p><br></p>
+
+<h5> Solution Access Requirement Examples </h5>
+
+<p style="text-align:justify">
+
+Below are a few examples of what kind of permissions are required for some various AWS focussed solutions. This list is by no means exhaustive. Bear in mind access is isolated between solutions in Conductor, and each will clearly document the authentication permissions required. Some solutions support read-only modes, designed for more security restricted organisations.
+
+</p>
+
+<p><ul class="list-group">
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#acc-ex-1">Resource Discovery <i class="fas fa-angle-down"></i></a>
+    <div id="acc-ex-1" class="collapse">
+    <br>
+      <p>
+      Something.
+      </p>
+    </div>
+  </li>
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#acc-ex-2">Instance SSM Compliance <i class="fas fa-angle-down"></i></a>
+    <div id="acc-ex-2" class="collapse">
+    <br>
+      <p>
+      Something.
+      </p>
+    </div>
+  </li>
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#acc-ex-3">Resource Tag Compliance <i class="fas fa-angle-down"></i></a>
+    <div id="acc-ex-3" class="collapse">
+    <br>
+      <p>
+      Something.
+      </p>
+    </div>
+  </li>
+</ul>
+<br>
+<p style="text-align:right">
+<b>See next:</b> <a href="/example/solutions#title">Example Solutions</a> or <a href="/example/models#title">Resource Organisational Models</a>
+</p></p>
 
 					</div>
 				</article>

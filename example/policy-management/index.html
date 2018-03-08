@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>Development and Operational Teams</title>
+	<title>Policy Management</title>
 
 	<link rel="shortcut icon" href="https://cloudreach-pdev.github.io/images/favicon.ico">
 
@@ -99,10 +99,60 @@
 
  				<article class="post">
 					<header class="entry-header">
- 						<h2 id="title" class="entry-title" style="color:#e62958">Development and Operational Teams</h1>
+ 						<h2 id="title" class="entry-title" style="color:#e62958">Policy Management</h1>
 					</header>
 					<div class="entry-content">
-						<p>Apply industry recommended measures across all your cloud resources using one command: conductor solution enable x. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today. It all starts on the command line with conductor solution generate my_solution.</p>
+						<p style="text-align:justify">
+
+The previous sections spoke about enabling solutions and using queries to group resources to build an organisational model. This section expands on these ideas and introduces how policies work in Conductor.
+</p>
+
+<ul class="list-group">
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#ex-1">The general policy model <i class="fas fa-angle-down"></i></a>
+    <div id="ex-1" class="collapse">
+    <br>
+      <p>
+      With Conductor, solutions define policies and resource <i>types</i> (e.g. AWS EC2 instances) they apply to. Policies are associated with resources via resource groups, allowing policies to work well with highly ephemeral environments. For each type of policy enabled by a solution, Conductor will find what groups a resource belongs to and calculate an effective policy for that resource. When a solution is invoked (e.g. it sees the resource has changed), it will process all affected resources, along with its policy.
+      </p>
+      <div class="row" style="text-align:center">
+        <div class="col-md-3"><i class="far fa-object-group"></i><br><br>1. User enables a solution and sets a policy on a resource group.</div>
+        <div class="col-md-3"><i class="fas fa-code-branch"></i><br><br>2. Conductor uses the solution defined conflict strategy and associates an effective policy to each resource.</div>
+        <div class="col-md-3"><i class="fas fa-cog"></i><br><br>3. Solution is invoked because of an event such as a resource changing, a schedule or external API invocation.</div>
+        <div class="col-md-3"><i class="fas fa-cogs"></i><br><br>4. Solution invocation processes all resources with a policy associated.</div>
+      </div>
+      <br>
+    </div>
+  </li>
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#ex-2">View policy coverage, adherence and compliance <i class="fas fa-angle-down"></i></a>
+    <div id="ex-2" class="collapse">
+    <br>
+    <p>
+    Setting policy in Conductor is simple however in larger organisational models this can still become a spaghetti junction and difficult to manage at scale - especially where many resource groups may exist. To account for this, it is possible to quickly switch views between what policies are applied overall within the organisational resource group model and show how well resources comply with them.
+    </p>
+      <div class="row" style="text-align:center">
+        <div class="col-md-6"><img src="#" /><br><br>Showing Policy Coverage</div>
+        <div class="col-md-6"><img src="#" /><br><br>Showing Policy Compliance</div>
+      </div>
+      <br>
+    </div>
+  </li>
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#ex-3">Support policy management in split-operational organisations <i class="fas fa-angle-down"></i></a>
+    <div id="ex-3" class="collapse">
+    <br>
+      <p>
+      Conductor is about enabling any organisation with any policy management model. Key to this is making policies a first class citizen within the Conductor framework. Because of this, policies can be inherited and merged together (as described above), making Conductor an ideal way to support scenarios where organisations may want to have multiple self-organised teams, but still retain a lean group level IT presence to govern high level policies.
+      </p>
+    </div>
+  </li>
+</ul>
+
+<p><br>
+<p style="text-align:right">
+<b>See next:</b> <a href="/example/development#title">For Developers</a>
+</p></p>
 
 					</div>
 				</article>

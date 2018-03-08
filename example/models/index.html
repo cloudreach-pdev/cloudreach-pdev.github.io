@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>models</title>
+	<title>resource organisation models</title>
 
 	<link rel="shortcut icon" href="https://cloudreach-pdev.github.io/images/favicon.ico">
 
@@ -99,14 +99,66 @@
 
  				<article class="post">
 					<header class="entry-header">
- 						<h2 id="title" class="entry-title" style="color:#e62958">models</h1>
+ 						<h2 id="title" class="entry-title" style="color:#e62958">resource organisation models</h1>
 					</header>
 					<div class="entry-content">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae. Adipisci ad natus deleniti.</p>
+						<p style="text-align:justify">
 
-<p>Dolores harum alias consequatur blanditiis. Inventore, quod, ullam veritatis eum ratione neque quis fugit quae optio facilis in ipsa! Maiores, quia, possimus repellendus iusto nostrum nisi doloribus qui excepturi ducimus veritatis molestiae autem consequatur quae ex nihil id sapiente minima adipisci. Quibusdam, aperiam, sapiente, nobis, possimus vero laudantium delectus esse minus quo nihil perspiciatis accusamus. Cupiditate sapiente illum accusantium animi pariatur sed minima nam.</p>
+Conductor has two key concepts which enable organisations to visualise and apply policies to resources flexibly, <kbd>queries</kbd> and <kbd>resource groups</kbd>. Queries are used to return a collection of resources along a high degree of dimensions, whereas resource groups effectively save these queries into a reusable, logical collection somewhere in your Conductor resource hierarchy. This section outlines some classic approaches to building a resource model to enables your organisation to quickly build a well-defined hierarchy of management and reporting across all integrated services, platforms and resource types.
 
-<p>Harum, consectetur, quia nisi fugiat quasi ea amet cum inventore aperiam optio qui perspiciatis debitis molestiae laborum minima doloremque ullam eum nesciunt repellendus dolor dicta cumque deserunt. Quaerat, saepe, maxime, quod, dolor nisi assumenda aut est quos optio animi aliquid quidem voluptates adipisci hic recusandae dicta quis eligendi illo ducimus asperiores reiciendis odit distinctio natus? In, reprehenderit, facere, ipsam, vel architecto autem temporibus a quidem voluptatum at nesciunt quas facilis. Soluta, excepturi, nihil, illum dicta hic ratione tenetur voluptate dolorum a tempore dignissimos reprehenderit voluptas expedita officiis enim minus adipisci?</p>
+</p>
+
+<ul class="list-group">
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#ex-1">By Cost Center and Application <i class="fas fa-angle-down"></i></a>
+    <div id="ex-1" class="collapse">
+    <br>
+      <p>
+      Many organisations wish to deliver and manage IT services for their organisation in-line with the company structure and budget lines. This allows policy, cause and effect to be easily traced and all liabilities to have explicit association with purpose to application and data stakeholders. Conductor allows this type of association to be made quickly, as shown below where the organisation is decomposed into several business units and their respective application / service portfolios. Where blurred lines exist, e.g. Engineering and Operations joint manage an application, the same resource group defining that application can be used by both, and Conductors policy resolution engine will automatically mediate any policy conflicts.
+      </p>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2">[DIAGRAM PLACEHOLDER]</div>
+        <div class="col-md-4">[DIAGRAM PLACEHOLDER]</div>
+      </div>
+      <br>
+    </div>
+  </li>
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#ex-2">By Compliance or Governance State <i class="fas fa-angle-down"></i></a>
+    <div id="ex-2" class="collapse">
+    <br>
+    <p>
+    Quickly establishing views on which resources are in a compliant state is immensely useful for governance and compliance-centric stakeholders. Conductor goes far beyond the ability to simply group resources by tags and allows users to specify sophisticated conditions for defining a resource group such as:</p>
+    <p><kbd>"All hosted instances / VM's which contain data of classification 'confidential' <b>AND</b> has attached a security group / firewall with port tcp-22 accessible by the world"</kbd>.</p>
+    <p>Using these type of queries and resource groups in conjunction with Conductors heatmap dashboard allows your entire security posture and mitigation strategy to be measured and managed in one perspective.
+    </p>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-2">[DIAGRAM PLACEHOLDER]</div>
+      <div class="col-md-4">[DIAGRAM PLACEHOLDER]</div>
+    </div>
+    <br>
+    </div>
+  </li>
+  <li class="list-group-item justify-content-between">
+    <a style="cursor:pointer;color:#666666" data-toggle="collapse" data-target="#ex-3">By Confidentiality, Integrity and Availability <i class="fas fa-angle-down"></i></a>
+    <div id="ex-3" class="collapse">
+    <br>
+    <p>
+    The above example models are not mutually exclusive and can be extended as you wish. A typical dimension of management for cloud hosted applications are policies tied to stances around how confidential data is on the systems, required up time or availability. Because Conductor offers solutions which can discover meta-data not just at the cloud provider level, but from build platforms, configuration managers, CMDB's or any API enabled service you wish to integrate: it is possible to use this information to build a comprehensive structure around how resources are grouped and policies applied. Below shows how the cost centre and application example is extended to include confidentiality levels. 
+    </p>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-2">[DIAGRAM PLACEHOLDER]</div>
+      <div class="col-md-4">[DIAGRAM PLACEHOLDER]</div>
+    </div>
+    <br>
+    </div>
+  </li>
+</ul>
+
+<p><br>
+<p style="text-align:right">
+<b>See next:</b> <a href="/example/policy-management/#title">Example Policy Management</a>
+</p></p>
 
 					</div>
 				</article>

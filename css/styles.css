@@ -3,7 +3,7 @@ html {
 }
 body {
   font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
   font-family: "Open sans", Helvetica, Arial, sans-serif;
   color: #666666;
   padding: 0;
@@ -11,6 +11,12 @@ body {
 .topspace {
   margin-top: 40px;
 }
+
+.badge {
+  font-weight: normal;
+}
+
+
 /*********************************************************************
 
 
@@ -144,6 +150,7 @@ body {
 p {
   line-height: 1.6em;
   margin: 0 0 30px 0;
+  text-align: justify;
 }
 ul,
 ol {
@@ -498,8 +505,7 @@ img {
   color: #808080;
   border: 0 none;
   font-size: 20px;
-  font-size: 1.25rem;
-  font-family: Georgia, serif;
+  font-size: 0.9375rem;
 }
 .pagination > li > a:hover {
   color: #000000;

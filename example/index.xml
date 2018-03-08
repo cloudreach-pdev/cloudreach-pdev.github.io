@@ -11,21 +11,31 @@
     
     
     <item>
-      <title>Getting Started with Development</title>
+      <title>Example Solutions</title>
+      <link>https://cloudreach-pdev.github.io/example/solutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/example/solutions/</guid>
+      <description>Solutions are provided by default with Conductor and enabled by a simple catalog-like interface. Additional solutions can be easily added via a CLI using the command: `conductor solution install SOLUTION_NAME`. This allows third-party solutions to be easily created and shared. For a preliminary view of what solutions are available from Cloudreach, and how solution code is structured, check out our repositories in GitHub below.  
+See next: Organisational Models </description>
+    </item>
+    
+    <item>
+      <title>For Developers</title>
       <link>https://cloudreach-pdev.github.io/example/development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudreach-pdev.github.io/example/development/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae.</description>
+      <description>There are two aspects to developing with Conductor depending on what you need to achieve. Where an organisation may wish to integrate the Conductor platform, an API is made available which can be used to achieve anything possible via the WebUI or CLI. If developing new or extending existing solutions is more in-scope, the SDK and Conductor development lifecycle can be used to quickly prototype, test and deploy quality solutions into the Solution Gallery for your organisation.</description>
     </item>
     
     <item>
-      <title>models</title>
-      <link>https://cloudreach-pdev.github.io/example/models/</link>
+      <title>Policy Management</title>
+      <link>https://cloudreach-pdev.github.io/example/policy-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudreach-pdev.github.io/example/models/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae.</description>
+      <guid>https://cloudreach-pdev.github.io/example/policy-management/</guid>
+      <description>The previous sections spoke about enabling solutions and using queries to group resources to build an organisational model. This section expands on these ideas and introduces how policies work in Conductor. The general policy model   With Conductor, solutions define policies and resource types (e.g. AWS EC2 instances) they apply to. Policies are associated with resources via resource groups, allowing policies to work well with highly ephemeral environments. For each type of policy enabled by a solution, Conductor will find what groups a resource belongs to and calculate an effective policy for that resource.</description>
     </item>
     
     <item>
@@ -34,16 +44,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudreach-pdev.github.io/example/requirements/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae.</description>
+      <description>Conductor has lean requirements for getting started, namely the following two things are needed:
+Platform Setup Access to an Amazon Web Services (AWS) provider account is required to execute Conductor solutions using AWS Lambda. Conductor simply requires an ARN of an AWS IAM Role meeting or exceeding this policy .
+   { &#34;Version&#34;: &#34;2012-10-17&#34;, &#34;Statement&#34;: [ { &#34;Action&#34;: [ &#34;iam:CreatePolicy&#34;, &#34;iam:CreateRole&#34;, &#34;iam:AttachRolePolicy&#34; ], &#34;Effect&#34;: &#34;Allow&#34;, &#34;Resource&#34;: &#34;*&#34; } ] }     API Credentials Services or platforms you wish to integrate Conductor with (for example*) must have a public accessible API, and ability to support authentication via HTTPS or AWS Roles.</description>
     </item>
     
     <item>
-      <title>views</title>
-      <link>https://cloudreach-pdev.github.io/example/views/</link>
+      <title>resource organisation models</title>
+      <link>https://cloudreach-pdev.github.io/example/models/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cloudreach-pdev.github.io/example/views/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae.</description>
+      <guid>https://cloudreach-pdev.github.io/example/models/</guid>
+      <description>Conductor has two key concepts which enable organisations to visualise and apply policies to resources flexibly, queries and resource groups. Queries are used to return a collection of resources along a high degree of dimensions, whereas resource groups effectively save these queries into a reusable, logical collection somewhere in your Conductor resource hierarchy. This section outlines some classic approaches to building a resource model to enables your organisation to quickly build a well-defined hierarchy of management and reporting across all integrated services, platforms and resource types.</description>
     </item>
     
   </channel>

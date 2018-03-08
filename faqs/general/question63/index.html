@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
 
-	<title>Development and Operational Teams</title>
+	<title>How is data isolated between customers?</title>
 
 	<link rel="shortcut icon" href="https://cloudreach-pdev.github.io/images/favicon.ico">
 
@@ -99,10 +99,10 @@
 
  				<article class="post">
 					<header class="entry-header">
- 						<h2 id="title" class="entry-title" style="color:#e62958">Development and Operational Teams</h1>
+ 						<h2 id="title" class="entry-title" style="color:#e62958">How is data isolated between customers?</h1>
 					</header>
 					<div class="entry-content">
-						<p>Apply industry recommended measures across all your cloud resources using one command: conductor solution enable x. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today. It all starts on the command line with conductor solution generate my_solution.</p>
+						<p>Customers’ data is separated at rest by associating all data in our database with an “Organisation” key. This is unique to a customer. Our APIs also segregate data and validate all data returned is associated to the same Organisation key. We audit our public and private APIs for compliance to this requirement with every build / release. See our <a href="LINK">privacy policy</a> and <a href="LINK">security policy</a> for a detailed breakdown of our respective postures.</p>
 
 					</div>
 				</article>

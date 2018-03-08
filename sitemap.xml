@@ -3,16 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cloudreach-pdev.github.io/faqs/general/question50/</loc>
-  </url>
-  
-  <url>
     <loc>https://cloudreach-pdev.github.io/audience/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://cloudreach-pdev.github.io/faqs/commercial/question50/</loc>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question65/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question68/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question62/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question64/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question58/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question55/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question60/</loc>
   </url>
   
   <url>
@@ -26,11 +46,27 @@
   </url>
   
   <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question61/</loc>
+  </url>
+  
+  <url>
     <loc>https://cloudreach-pdev.github.io/audience/audience3/</loc>
   </url>
   
   <url>
     <loc>https://cloudreach-pdev.github.io/audience/audience1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question66/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question69/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/example/solutions/</loc>
   </url>
   
   <url>
@@ -52,7 +88,31 @@
   </url>
   
   <url>
-    <loc>https://cloudreach-pdev.github.io/faqs/technical/question500/</loc>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question54/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question57/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question52/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question56/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question63/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question67/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/example/policy-management/</loc>
   </url>
   
   <url>
@@ -61,7 +121,19 @@
   </url>
   
   <url>
-    <loc>https://cloudreach-pdev.github.io/example/models/</loc>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question53/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question51/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question59/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cloudreach-pdev.github.io/faqs/general/question50/</loc>
   </url>
   
   <url>
@@ -69,7 +141,7 @@
   </url>
   
   <url>
-    <loc>https://cloudreach-pdev.github.io/example/views/</loc>
+    <loc>https://cloudreach-pdev.github.io/example/models/</loc>
   </url>
   
 </urlset>

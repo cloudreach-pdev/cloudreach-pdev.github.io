@@ -11,30 +11,183 @@
     
     
     <item>
-      <title>AT-1</title>
+      <title>Can Conductor handle high-velocity stream data?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question65/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question65/</guid>
+      <description>In its original incarnation, Conductor can support only low velocity stream data via an API. The majority of current edition solutions use poll-type patterns for ingesting data. The roadmap for the next 6 months includes support for stream-based data patterns, and customers notified of this when available for early-access or general availability. We are always happy to aid any development efforts, so please let us know if we can help.</description>
+    </item>
+    
+    <item>
+      <title>Can I authenticate with Conductor via my own Identity Provider? </title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question68/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question68/</guid>
+      <description>Yes! Conductor supports a Bring-Your-Own-IdP model, meaning we will help you integrate an enterprise identity provider (e.g. Azure AD, ADFS, GApps etc.) which you can then map to users and permissions. Until self-service options become available, the easiest way to get started with this is to raise a support case, and we can help you from there. Until an IdP is configured, local credentials can be issued via the platform for you and your users.</description>
+    </item>
+    
+    <item>
+      <title>Can I export data to another format or system?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question62/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question62/</guid>
+      <description>Conductor supports exporting all Organisational data via JSON or CSV. This includes not only resource data, but supporting information around resource groups, solutions and policies in place. This data can be post-processed as needed or stored for compliance reasons. The exported data format is always versioned. It should be noted that it is possible to export data returned from a query in these formats also for reporting purposes.</description>
+    </item>
+    
+    <item>
+      <title>Can I extend the Conductor UI?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question64/</guid>
+      <description>Solutions are used to extend functionality in Conductor and can make use of available UI components. As of the present, these components are developed as part of the core platform and whilst can be leveraged by developed solutions, are unable to themselves be extended by developers. If this is a requirement, please get in touch.</description>
+    </item>
+    
+    <item>
+      <title>Can I have my cloud assets fully managed by Conductor, including break/fix?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question58/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question58/</guid>
+      <description>Conductor provides some solutions which happen to include automatic remediation for some cases. These are heavily dependent on the solutions themselves, and users are able to easily extend them as required to meet a broad range of requirements. Cloudreach offers service support contracts for AWS, Azure and GCP hosted applications and infrastructure via a their Cloud Core offering which includes use of Conductor. Please get in touch for more information if this is of interest.</description>
+    </item>
+    
+    <item>
+      <title>Can I host my own version or appliance of Conductor? </title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question55/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question55/</guid>
+      <description>At this time Conductor is offered on a SaaS model basis only. Depending on demand it will be possible to deploy an appliance or instance of Conductor in Kubernetes. If this is of genuine requirement to you or your organisation, please get in touch using email / Slack details found at the bottom of this page under Questions / Support, and we can discuss this.</description>
+    </item>
+    
+    <item>
+      <title>Can I integrate this with my build / CI platform or system?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question60/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question60/</guid>
+      <description>In a word, yes. Conductor has 100% RESTful API coverage which can be used by other services. A full reference to this can be found here. Conductor support includes helping development efforts, so get in touch if you need help or guidance integrating your services.</description>
+    </item>
+    
+    <item>
+      <title>Conductor mentions queries a lot, does this use a defined query syntax?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question61/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question61/</guid>
+      <description>We use a modified version of Apache Lucene for our query syntax. This was chosen due to its industry reputation and prevalence. At this time Conductor does not support the full specification for Lucene (reference here), but will continue to evolve over time, directed by market demand. If a particular capability is missing which you would like to see included, please get in touch.</description>
+    </item>
+    
+    <item>
+      <title>Do you event source resource changes?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question66/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question66/</guid>
+      <description>Resources are point-in-time records at the moment, meaning that any resource which is updated will lose resolution of that change. Keeping a historical record of changes in-line with a retention policy will be available in the next 6 months and allow users to see the full change log set for a given resource. Until this feature is available, it should be noted that Conductor can emit events when a resource changes, along with a record of that change.</description>
+    </item>
+    
+    <item>
+      <title>Do you support multi-factor authentication?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question69/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question69/</guid>
+      <description>We will support this within the next 3 months.</description>
+    </item>
+    
+    <item>
+      <title>How can I be sure my data is kept separate?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question54/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question54/</guid>
+      <description>As a multi-service provider capable Cloud ITSM, Conductor does not have direct affinity for any specific cloud vendor or provider, and realistically any API capable service can be integrated easily. As of launch, Conductor offers discovery solutions for AWS, which will be augmented shortly with support for Azure and GCP.</description>
+    </item>
+    
+    <item>
+      <title>How can I define my application within Conductor?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question57/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question57/</guid>
+      <description>Conductor&amp;rsquo;s resource group model is open ended and can be used for multiple purposes, including &amp;lsquo;representation&amp;rsquo; of an application within an Organisation. Provided a query can be used to define what the application is (e.g. everything tagged application:MyApplication), then Conductor can represent this for you. This makes it easy to apply application specific policies to your applications as needed.</description>
+    </item>
+    
+    <item>
+      <title>How do I actually procure Conductor?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question52/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question52/</guid>
+      <description>Conductor is currently open enrolment meaning you can sign-up freely with nothing more than an e-mail address (or social identity such as Google Apps or LinkedIn) and an organisation name. We will get in contact via email within 24 hours with instructions on how to get started.</description>
+    </item>
+    
+    <item>
+      <title>How do I know or change my provisioned storage capacity?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question56/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question56/</guid>
+      <description>Your storage capacity is measured every 24 hours and displayed on a per organisation basis along with the current capacity tier procured. This can be changed (up-or-down) by getting in touch with your account manager or raising a support case. In the near future this will be modifiable via the settings page of Conductor. For managed service providers using Conductor across multiple organisations, please raise a support case and we will get in touch to quota capacity across organisations you specify.</description>
+    </item>
+    
+    <item>
+      <title>How is data isolated between customers?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question63/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question63/</guid>
+      <description>Customers’ data is separated at rest by associating all data in our database with an “Organisation” key. This is unique to a customer. Our APIs also segregate data and validate all data returned is associated to the same Organisation key. We audit our public and private APIs for compliance to this requirement with every build / release. See our privacy policy and security policy for a detailed breakdown of our respective postures.</description>
+    </item>
+    
+    <item>
+      <title>If I am using this as an MSP, can I query across Orgs?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question67/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question67/</guid>
+      <description>Due to restrictions in place to prevent cross-organisational contamination or compromise, it is not possible to query universally across all organisations which you may be managing (under an MSP agreement with Cloudreach). It is however possible to enumerate a query across all organisations (i.e. the same query is made against all organisations) and results aggregated.</description>
+    </item>
+    
+    <item>
+      <title>What cloud providers do you support?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question53/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question53/</guid>
+      <description>As a multi-service provider capable Cloud ITSM, Conductor does not have direct affinity for any specific cloud vendor or provider, and realistically any API capable service can be integrated easily. As of launch, Conductor offers discovery solutions for AWS, which will be augmented shortly with support for Azure and GCP.</description>
+    </item>
+    
+    <item>
+      <title>What size customer is Conductor aimed for?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question51/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question51/</guid>
+      <description>Conductor is primarily aimed at cloud enabled enterprises with complicated operational methodologies and requirements. This however does not preclude SME&amp;rsquo;s from using Conductor, in fact many smaller organisations can benefit from our free tier plan to get started. Additionally, Conductor is able to be used by managed service providers who may manage multiple other organisations, there are several ways of achieving this effectively, so please get in touch.</description>
+    </item>
+    
+    <item>
+      <title>Where can I see the solutions it supports now?</title>
+      <link>https://cloudreach-pdev.github.io/faqs/general/question59/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cloudreach-pdev.github.io/faqs/general/question59/</guid>
+      <description>Conductor has an evolving eco-system of solutions which are offered directly via its solution gallery. The solutions and code can be found in our GitHub organisation. Please note that Cloudreach developed global solutions are open source and can be extended freely by customers of the Conductor platform.</description>
+    </item>
+    
+    <item>
+      <title>Why is the cost model for Conductor storage based?</title>
       <link>https://cloudreach-pdev.github.io/faqs/general/question50/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudreach-pdev.github.io/faqs/general/question50/</guid>
-      <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
-    </item>
-    
-    <item>
-      <title>C-1</title>
-      <link>https://cloudreach-pdev.github.io/faqs/commercial/question50/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloudreach-pdev.github.io/faqs/commercial/question50/</guid>
-      <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
-    </item>
-    
-    <item>
-      <title>S-1</title>
-      <link>https://cloudreach-pdev.github.io/faqs/technical/question500/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://cloudreach-pdev.github.io/faqs/technical/question500/</guid>
-      <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable x&amp;rdquo;. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
+      <description>Conductor uses a pay-per-provisioned GB model due to the ease of estimating costs to users and because it is able to be directly correlated to value for customers. Solutions offered as global via the included solution gallery will remain free, however this does not prevent third-party or even additional solutions from being offered on a paid-for basis in the future.</description>
     </item>
     
   </channel>
