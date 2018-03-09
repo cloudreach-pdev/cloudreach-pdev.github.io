@@ -88,7 +88,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudreach-pdev.github.io/audience/audience3/</guid>
-      <description>Establish the link between your service portfolios, data sets and cloud infrastructure. Conductor allows insight not just into what a particular resource is, but HOW it relates to other resources and what the impact of that relationship is. Understand what the critical chain looks like for you and yours, what happens when a link in the chain is compromised and manage the measures in play to prevent this.</description>
+      <description>Establish the link between your service portfolios, data sets and cloud infrastructure. Conductor allows insight not just into what a particular resource is, but HOW it relates to other resources and what the impact of that relationship is. Understand what the critical chain looks like for you and your stakeholders as well as what happens when a link in the chain is compromised. Using out of the box solutions or the solution SDK, enable or develop measures to increase operational integrity and insight.</description>
     </item>
     
     <item>
@@ -97,7 +97,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cloudreach-pdev.github.io/audience/audience1/</guid>
-      <description>Apply industry recommended measures across all your cloud resources using one command: conductor solution enable x. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly interact with your service providers and system or access resource data, policies and events. Conductors simple solutions framework for Cloud ITSM can get you and your team developing solutions to complicated problems today.</description>
+      <description>Apply industry recommended measures across all your cloud resources using one command: &amp;ldquo;conductor solution enable” with a solution of your choosing. Where out of the box Conductor solutions fall short of the mark for you, quickly prototype and develop solutions without worrying about how they will be shipped, deployed and executed. With the Conductor solutions SDK you can effortlessly develop solutions to complicated cloud management problems today.</description>
     </item>
     
     <item>
